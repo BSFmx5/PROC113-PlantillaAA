@@ -8,8 +8,8 @@ import shutil
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# from_dir = "ENTER THE PATH OF DOWNLOAD FOLDER (USE " / ") in VSC"
-# to_dir = "ENTER THE PATH OF DESTINATION FOLDER(USE " / ") in VSC"
+# from_dir = "INGRESA LA RUTA DE LA CARPETA DESCARGAS (UTILIZA " / ") en VSC"
+# to_dir = "INGRESA LA RUTA DE LA CARPETA DESTINO(UTILIZA " / ") en VSC"
 
 from_dir = "C:/Users/preet/Downloads"
 to_dir = "C:/Users/preet/Desktop/Downloaded_Files"
@@ -21,7 +21,7 @@ dir_tree = {
     "Setup_Files": ['.exe', '.bin', '.cmd', '.msi', '.dmg']
 }
 
-# Event Hanlder Class
+# # Clase event handler 
 
 class FileMovementHandler(FileSystemEventHandler):
 
@@ -34,21 +34,21 @@ class FileMovementHandler(FileSystemEventHandler):
         print(event.src_path)
 
 
-# Initialize Event Handler Class
+# Inicia la clase event handler
 event_handler = FileMovementHandler()
 
 
-# Initialize Observer
+# Inicia Observer
 observer = Observer()
 
-# Schedule the Observer
+# Programa el Observer
 observer.schedule(event_handler, from_dir, recursive=True)
 
 
-# Start the Observer
+# Inicia el Observer
 observer.start()
 
-#Student Activity2
+#Actividad del alumno 2
 while True:
     time.sleep(2)
     print("running...")
