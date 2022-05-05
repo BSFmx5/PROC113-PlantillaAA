@@ -21,11 +21,11 @@ dir_tree = {
     "Setup_Files": ['.exe', '.bin', '.cmd', '.msi', '.dmg']
 }
 
-# # Clase event handler 
+# Clase event handler 
 
 class FileMovementHandler(FileSystemEventHandler):
 
-    #Student Activity1
+    #Actividad del alumno1
 
     
 
@@ -51,6 +51,6 @@ observer.start()
 #Actividad del alumno 2
 while True:
     time.sleep(2)
-    print("running...")
+    print("ejecutando...")
 
     
