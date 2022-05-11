@@ -25,7 +25,7 @@ dir_tree = {
 
 class FileMovementHandler(FileSystemEventHandler):
 
-    #Actividad del alumno1
+    # Actividad del alumno 1
 
     
 
@@ -48,7 +48,7 @@ observer.schedule(event_handler, from_dir, recursive=True)
 # Inicia el Observer
 observer.start()
 
-#Actividad del alumno 2
+# Actividad del alumno 2
 while True:
     time.sleep(2)
     print("ejecutando...")
